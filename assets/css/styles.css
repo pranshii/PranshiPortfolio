@@ -545,9 +545,10 @@ font-weight: var(--font-medium);
     }
 
   .contact__information {
-    display: flex;
-    margin-bottom: var(--mb-2)
-}
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 
 .contact__img {
     width: 100%;
@@ -575,8 +576,11 @@ font-weight: var(--font-medium);
 
 .contact__content {
     background-color: var(--input-color);
-    border-radius: .5rem;
-    padding: .75rem 1rem .25rem;
+/*     border-radius: .5rem; */
+/*     padding: .75rem 1rem .25rem; */
+    width: 100%; 
+    max-width: 400px; /* Adjust based on your design */
+    margin: 0 auto; /* Center it */
 }
 
 .contact__label {
