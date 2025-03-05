@@ -536,6 +536,7 @@ font-weight: var(--font-medium);
 
 
 /********* CONTACT ME *********/
+/********* CONTACT ME *********/
 .contact__container {
     row-gap: 3rem;
 }
@@ -545,19 +546,13 @@ font-weight: var(--font-medium);
     margin-bottom: var(--mb-2)
 }
 
-.contact__img {
+.contact__img{
     width: 400px;
     height: 300px;
     display: block;
     margin-left: -50px;
     justify-content: center;
 }
-
-/* Hide image on mobile (screens smaller than 768px) */
-@media screen and (max-width: 768px) {
-    .contact__img {
-        display: none;  /* Hides the image on mobile */
-    }
 
 /* .contact__icon {
     font-size: 1.5rem;
