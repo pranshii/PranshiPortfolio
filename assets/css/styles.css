@@ -737,10 +737,6 @@ font-weight: var(--font-medium);
           .contact__img {
         display: none; /* Hide contact image on small devices */
     }
-        
-/*     .contact__inputs {
-        grid-template-columns: 1fr; /* Ensure single column on mobile */
-    } */
 
     .testimonial__header,
     .testimonial__data {
@@ -759,6 +755,11 @@ font-weight: var(--font-medium);
     }
 }
 
+@media screen and (max-width: 568px) {
+    .contact__img { 
+        display: none; 
+    }
+}
 /* For medium devices */
 @media screen and (min-width: 568px) {
     .home__content {
@@ -771,14 +772,6 @@ font-weight: var(--font-medium);
         order: 1;
         justify-self: center;
     }
-          .contact__img {
-        display: none; /* Hide contact image on small devices */
-    }
-        
-/*     .contact__inputs {
-        grid-template-columns: 1fr; /* Ensure single column on mobile */
-    } */
-
     .about__container,
     .skills_container,
     .portfolio__content,
