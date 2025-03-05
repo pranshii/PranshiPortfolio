@@ -907,6 +907,14 @@ font-weight: var(--font-medium);
         .project__data {
             padding-top: .8rem;
         }
+
+         .contact__img {
+        display: none; /* Hide contact image on small devices */
+    }
+        
+    .contact__inputs {
+        grid-template-columns: 1fr; /* Ensure single column on mobile */
+    }
         .footer__container {
             grid-template-columns: repeat(3, 1fr);
         }
