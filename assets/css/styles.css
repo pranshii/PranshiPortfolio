@@ -734,6 +734,13 @@ font-weight: var(--font-medium);
     .project__img {
         width: 200px;
     }
+          .contact__img {
+        display: none; /* Hide contact image on small devices */
+    }
+        
+/*     .contact__inputs {
+        grid-template-columns: 1fr; /* Ensure single column on mobile */
+    } */
 
     .testimonial__header,
     .testimonial__data {
@@ -764,6 +771,13 @@ font-weight: var(--font-medium);
         order: 1;
         justify-self: center;
     }
+          .contact__img {
+        display: none; /* Hide contact image on small devices */
+    }
+        
+/*     .contact__inputs {
+        grid-template-columns: 1fr; /* Ensure single column on mobile */
+    } */
 
     .about__container,
     .skills_container,
@@ -908,13 +922,6 @@ font-weight: var(--font-medium);
             padding-top: .8rem;
         }
 
-         .contact__img {
-        display: none; /* Hide contact image on small devices */
-    }
-        
-    .contact__inputs {
-        grid-template-columns: 1fr; /* Ensure single column on mobile */
-    }
         .footer__container {
             grid-template-columns: repeat(3, 1fr);
         }
