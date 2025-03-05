@@ -536,21 +536,25 @@ font-weight: var(--font-medium);
 
 
 /********* CONTACT ME *********/
-.contact__container {
-    row-gap: 3rem;
-}
+/* Make the contact section responsive */
+@media screen and (max-width: 768px) {
+    .contact__container {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center;
+        row-gap: 1.5rem;
+    }
 
-.contact__information {
+  .contact__information {
     display: flex;
     margin-bottom: var(--mb-2)
 }
 
-.contact__img{
-    width: 400px;
-    height: 300px;
+.contact__img {
+    width: 100%;
+    max-width: 400px;  /* Ensures it doesn't get too big on large screens */
+    height: auto;
     display: block;
-    margin-left: -50px;
-    justify-content: center;
+    margin: 0 auto;  /* Centers the image */
 }
 
 /* .contact__icon {
