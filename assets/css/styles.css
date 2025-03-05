@@ -536,27 +536,28 @@ font-weight: var(--font-medium);
 
 
 /********* CONTACT ME *********/
-/* Make the contact section responsive */
-@media screen and (max-width: 768px) {
-    .contact__container {
-        flex-direction: column; /* Stack elements vertically */
-        align-items: center;
-        row-gap: 1.5rem;
-    }
+.contact__container {
+    row-gap: 3rem;
+}
 
-  .contact__information {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
+.contact__information {
+    display: flex;
+    margin-bottom: var(--mb-2)
+}
 
 .contact__img {
-    width: 100%;
-    max-width: 400px;  /* Ensures it doesn't get too big on large screens */
-    height: auto;
+    width: 400px;
+    height: 300px;
     display: block;
-    margin: 0 auto;  /* Centers the image */
+    margin-left: -50px;
+    justify-content: center;
 }
+
+/* Hide image on mobile (screens smaller than 768px) */
+@media screen and (max-width: 768px) {
+    .contact__img {
+        display: none;  /* Hides the image on mobile */
+    }
 
 /* .contact__icon {
     font-size: 1.5rem;
@@ -576,11 +577,8 @@ font-weight: var(--font-medium);
 
 .contact__content {
     background-color: var(--input-color);
-/*     border-radius: .5rem; */
-/*     padding: .75rem 1rem .25rem; */
-    width: 100%; 
-    max-width: 400px; /* Adjust based on your design */
-    margin: 0 auto; /* Center it */
+    border-radius: .5rem;
+    padding: .75rem 1rem .25rem;
 }
 
 .contact__label {
