@@ -536,7 +536,6 @@ font-weight: var(--font-medium);
 
 
 /********* CONTACT ME *********/
-/********* CONTACT ME *********/
 .contact__container {
     row-gap: 3rem;
 }
@@ -554,11 +553,11 @@ font-weight: var(--font-medium);
     justify-content: center;
 }
 
-/* .contact__icon {
+ .contact__icon {
     font-size: 1.5rem;
     color: var(--first-color);
     margin-right: var(--mb-0-75);
-} */
+} 
 
 .content__title {
     font-size: var(--h3-font-size);
