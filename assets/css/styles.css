@@ -786,7 +786,12 @@ font-weight: var(--font-medium);
         grid-template-columns: .6fr;
         justify-content: center;
     }
-
+    
+@media screen and (max-width: 768px) {
+    .contact__img { 
+        display: none; 
+    }
+}
     @media screen and (min-width: 768px) {
         .container {
             margin-left: auto;
