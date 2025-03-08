@@ -535,31 +535,46 @@ font-weight: var(--font-medium);
 
 
 
-/********* CONTACT ME *********/
+******** CONTACT ME ********
+
 .contact__container {
-    row-gap: 3rem;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%; /* Ensures full width */
 }
 
-.contact__information {
+.contact__button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 1rem; /* Adjust spacing if needed */
+}
+
+
+ /* .contact__information {
     display: flex;
     margin-bottom: var(--mb-2)
-}
+} */
 
-.contact__img{
+/*.contact__img{
     width: 400px;
     height: 300px;
     display: block;
     margin-left: -50px;
     justify-content: center;
-}
+ } */
 
- .contact__icon {
+ /* .contact__icon {
     font-size: 1.5rem;
     color: var(--first-color);
     margin-right: var(--mb-0-75);
-} 
+}  */
 
-.content__title {
+/* .content__title { 
     font-size: var(--h3-font-size);
     font-weight: var(--font-medium);
 }
@@ -589,7 +604,9 @@ font-weight: var(--font-medium);
     border: none;
     outline: none;
     padding: .25rem .5rem .5rem 0;
-}
+} */
+
+
 
 /********* FOOTER *********/
 .footer {
@@ -692,6 +709,7 @@ font-weight: var(--font-medium);
 
 /********* MEDIA QUERIES *********/
 /* For small devices */
+
 @media screen and (max-width: 350px) {
     .container {
         margin-left: var(--mb-1);
@@ -734,9 +752,7 @@ font-weight: var(--font-medium);
     .project__img {
         width: 200px;
     }
-          .contact__img {
-        display: none; /* Hide contact image on small devices */
-    }
+    
 
     .testimonial__header,
     .testimonial__data {
@@ -755,11 +771,6 @@ font-weight: var(--font-medium);
     }
 }
 
-@media screen and (max-width: 568px) {
-    .contact__img { 
-        display: none; 
-    }
-}
 /* For medium devices */
 @media screen and (min-width: 568px) {
     .home__content {
@@ -776,22 +787,23 @@ font-weight: var(--font-medium);
     .skills_container,
     .portfolio__content,
     .project__container,
-    .contact__container,
+    /* .contact__container, */
     .footer__container {
         grid-template-columns: repeat(2, 1fr);
     }
-
+    .contact__container {
+        display: flex;
+        flex-direction: column; /* Stack elements vertically */
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
     .qualification__sections {
         display: grid;
         grid-template-columns: .6fr;
         justify-content: center;
     }
     
-@media screen and (max-width: 768px) {
-    .contact__img { 
-        display: none; 
-    }
-}
     @media screen and (min-width: 768px) {
         .container {
             margin-left: auto;
@@ -973,10 +985,10 @@ font-weight: var(--font-medium);
         bottom: -4.5rem
     }
 
-    .contact__form {
+    /* .contact__form {
         width: 450px; 
     }
     .contact__inputs {
         grid-template-columns: repeat(2, 1fr);
-    }
+    } */
 }
